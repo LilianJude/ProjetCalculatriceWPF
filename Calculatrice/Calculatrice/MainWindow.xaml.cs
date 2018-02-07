@@ -79,38 +79,51 @@ namespace Calculatrice
         {
             ((ViewModel)DataContext).Result += "9";
         }
+
         private void Click_plus(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result += "+";
         }
+
         private void Click_moins(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result += "-";
         }
+
         private void Click_multiple(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result += "*";
         }
+
         private void Click_divise(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result += "/";
         }
+
         private void Click_parentheseG(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result += "(";
         }
+
         private void Click_parentheseD(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result += ")";
         }
+
         private void Click_back(object sender, RoutedEventArgs e)
         {
-            ((ViewModel)DataContext).Result += "";
+            string chaine = ((ViewModel)DataContext).Result;
+            if (chaine != "")
+            {
+                ((ViewModel)DataContext).Result = chaine.Remove(chaine.Length - 1);
+            }
         }
+
         private void Click_virgule(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result += ",";
         }
+
         private void Click_CE(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result = "";

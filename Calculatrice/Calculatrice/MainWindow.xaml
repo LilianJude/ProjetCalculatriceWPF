@@ -31,7 +31,7 @@
         <Button Grid.Row="3" Grid.Column="2" Content="6" FontSize="30" Click="Click_6"/>
         <Button Grid.Row="2" Content="7" FontSize="30" Click="Click_7"/>
         <Button Grid.Row="2" Grid.Column="1" Content="8" FontSize="30" Click="Click_8"/>
-        <Button Grid.Row="2" Grid.Column="2" Content="8" FontSize="30" Click="Click_9"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="9" FontSize="30" Click="Click_9"/>
         <Button Grid.Row="5" Grid.Column="1" Content="0" FontSize="30" Click="Click_0"/>
         <Button Grid.Row="2" Grid.Column="3" Content="+" FontSize="30" Click="Click_plus"/>
         <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="40" Click="Click_moins"/>
