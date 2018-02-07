@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculatrice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="550" Width="725">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+        </Grid.ColumnDefinitions>
         
+        <Button Grid.Row="4" Content="1" />
+        <Button Grid.Row="4" Grid.Column="1" Content="2" />
+        <Button Grid.Row="4" Grid.Column="2" Content="3" />
+        <Button Grid.Row="3" Content="4" />
+        <Button Grid.Row="3" Grid.Column="1" Content="5" />
+        <Button Grid.Row="3" Grid.Column="2" Content="6" />
+        <Button Grid.Row="2" Content="7" />
+        <Button Grid.Row="2" Grid.Column="1" Content="8" />
+        <Button Grid.Row="2" Grid.Column="2" Content="9" />
+        <Button Grid.Row="5" Grid.Column="1" Content="0" />
+        <Button Grid.Row="2" Grid.Column="3" Content="+" FontSize="30" />
+        <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="40" />
+        <Button Grid.Row="4" Grid.Column="3" Content="x" FontSize="30" />
+        <Button Grid.Row="5" Grid.Column="3" Content="/" FontSize="30" />
     </Grid>
 </Window>
