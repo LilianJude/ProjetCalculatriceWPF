@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55fadefc-992b-4c68-994a-dab9521be7a2" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="App.xaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Calculatrice/App.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1518011862887" expanded="true" signature="0:365" ph="&lt;&lt;Application.Resources&gt;&#10;         &#10;    &lt;/Application.Resources&gt;.../&gt;" />
+                <marker date="1518011862887" expanded="true" signature="288:350" ph="&lt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindow.xaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Calculatrice/MainWindow.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <marker date="1518015346210" expanded="true" signature="0:1974" ph="&lt;&lt;Grid&gt;&#10;        &lt;Grid.RowDefinitions&gt;&#10;            &lt;RowDefinition Height=&quot;*&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;        &lt;/Grid.RowDefinitions&gt;&#10;        &lt;Grid.ColumnDefinitions&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;        &lt;/Grid.ColumnDefinitions&gt;&#10;        &#10;        &lt;Button Grid.Row=&quot;4&quot; Content=&quot;1&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;1&quot; Content=&quot;2&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;2&quot; Content=&quot;3&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;3&quot; Content=&quot;4&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;1&quot; Content=&quot;5&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;2&quot; Content=&quot;6&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;2&quot; Content=&quot;7&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;1&quot; Content=&quot;8&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;2&quot; Content=&quot;9&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;5&quot; Grid.Column=&quot;1&quot; Content=&quot;0&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;3&quot; Content=&quot;+&quot; FontSize=&quot;30&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;3&quot; Content=&quot;-&quot; FontSize=&quot;40&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;3&quot; Content=&quot;x&quot; FontSize=&quot;30&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;5&quot; Grid.Column=&quot;3&quot; Content=&quot;/&quot; FontSize=&quot;30&quot; /&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+                <marker date="1518015346210" expanded="true" signature="458:1964" ph="&lt;&lt;Grid.RowDefinitions&gt;&#10;            &lt;RowDefinition Height=&quot;*&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;        &lt;/Grid.RowDefinitions&gt; &lt;Grid.ColumnDefinitions&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;        &lt;/Grid.ColumnDefinitions&gt; &lt;Button Grid.Row=&quot;4&quot; Content=&quot;1&quot; /&gt; &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;1&quot; Content=&quot;2&quot; /&gt; &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;2&quot; Content=&quot;3&quot; /&gt; &lt;Button Grid.Row=&quot;3&quot; Content=&quot;4&quot; /&gt; &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;1&quot; Content=&quot;5&quot; /&gt; &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;2&quot; Content=&quot;6&quot; /&gt; &lt;Button Grid.Row=&quot;2&quot; Content=&quot;7&quot; /&gt; &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;1&quot; Content=&quot;8&quot; /&gt; &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;2&quot; Content=&quot;9&quot; /&gt; &lt;Button Grid.Row=&quot;5&quot; Grid.Column=&quot;1&quot; Content=&quot;0&quot; /&gt; &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;3&quot; Content=&quot;+&quot; FontSize=&quot;30&quot; /&gt; &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;3&quot; Content=&quot;-&quot; FontSize=&quot;40&quot; /&gt; &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;3&quot; Content=&quot;x&quot; FontSize=&quot;30&quot; /&gt; &lt;Button Grid.Row=&quot;5&quot; Grid.Column=&quot;3&quot; Content=&quot;/&quot; FontSize=&quot;30&quot; /&gt;.../&gt;" />
+                <marker date="1518015346210" expanded="true" signature="473:770" ph="&lt;&lt;RowDefinition Height=&quot;*&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt;.../&gt;" />
+                <marker date="1518015346210" expanded="true" signature="779:1095" ph="&lt;&lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindow.xaml.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Calculatrice/MainWindow.xaml.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1518011862903" expanded="true" signature="6:381" ph="..." />
+                <marker date="1518011862903" expanded="true" signature="405:637" ph="{...}" />
+                <marker date="1518011862903" expanded="true" signature="412:495" ph="/// Logique d'interaction pour MainWindow.xaml ... " />
+                <marker date="1518011862903" expanded="true" signature="540:635" ph="{...}" />
+                <marker date="1518011862903" expanded="true" signature="574:629" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.xaml.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Calculatrice/App.xaml.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1518011862893" expanded="false" signature="6:165" ph="..." />
+                <marker date="1518011862893" expanded="true" signature="189:329" ph="{...}" />
+                <marker date="1518011862893" expanded="true" signature="196:272" ph="/// Logique d'interaction pour App.xaml ... " />
+                <marker date="1518011862893" expanded="true" signature="315:327" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Calculatrice/App.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Calculatrice/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Calculatrice/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Calculatrice/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Calculatrice/Text.cs" />
+        <option value="$PROJECT_DIR$/Calculatrice/MainWindow.xaml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="989" />
+    <option name="width" value="939" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Calculatrice (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Calculatrice (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Calculatrice" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Calculatrice (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Calculatrice" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="App.xaml" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Calculatrice (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Calculatrice" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MainWindow.xaml" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../wpf/HelloWorldWpf/HelloWorldWpf.sln" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Calculatrice/bin/Debug/Calculatrice.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Calculatrice/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Calculatrice/Calculatrice.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55fadefc-992b-4c68-994a-dab9521be7a2" name="Default" comment="" />
+      <created>1518011895664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1518011895664</updated>
+      <workItem from="1518011898221" duration="1829000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1829000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Calculatrice/App.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518011862887" expanded="true" signature="0:365" ph="&lt;&lt;Application.Resources&gt;&#10;         &#10;    &lt;/Application.Resources&gt;.../&gt;" />
+            <marker date="1518011862887" expanded="true" signature="288:350" ph="&lt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Calculatrice/App.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518011862893" expanded="false" signature="6:165" ph="..." />
+            <marker date="1518011862893" expanded="true" signature="189:329" ph="{...}" />
+            <marker date="1518011862893" expanded="true" signature="196:272" ph="/// Logique d'interaction pour App.xaml ... " />
+            <marker date="1518011862893" expanded="true" signature="315:327" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Calculatrice/MainWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518011862903" expanded="true" signature="6:381" ph="..." />
+            <marker date="1518011862903" expanded="true" signature="405:637" ph="{...}" />
+            <marker date="1518011862903" expanded="true" signature="412:495" ph="/// Logique d'interaction pour MainWindow.xaml ... " />
+            <marker date="1518011862903" expanded="true" signature="540:635" ph="{...}" />
+            <marker date="1518011862903" expanded="true" signature="574:629" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Calculatrice/Text.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Calculatrice/MainWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1518015346210" expanded="true" signature="0:1974" ph="&lt;&lt;Grid&gt;&#10;        &lt;Grid.RowDefinitions&gt;&#10;            &lt;RowDefinition Height=&quot;*&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;        &lt;/Grid.RowDefinitions&gt;&#10;        &lt;Grid.ColumnDefinitions&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;        &lt;/Grid.ColumnDefinitions&gt;&#10;        &#10;        &lt;Button Grid.Row=&quot;4&quot; Content=&quot;1&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;1&quot; Content=&quot;2&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;2&quot; Content=&quot;3&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;3&quot; Content=&quot;4&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;1&quot; Content=&quot;5&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;2&quot; Content=&quot;6&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;2&quot; Content=&quot;7&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;1&quot; Content=&quot;8&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;2&quot; Content=&quot;9&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;5&quot; Grid.Column=&quot;1&quot; Content=&quot;0&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;3&quot; Content=&quot;+&quot; FontSize=&quot;30&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;3&quot; Content=&quot;-&quot; FontSize=&quot;40&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;3&quot; Content=&quot;x&quot; FontSize=&quot;30&quot; /&gt;&#10;        &lt;Button Grid.Row=&quot;5&quot; Grid.Column=&quot;3&quot; Content=&quot;/&quot; FontSize=&quot;30&quot; /&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1518015346210" expanded="true" signature="458:1964" ph="&lt;&lt;Grid.RowDefinitions&gt;&#10;            &lt;RowDefinition Height=&quot;*&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;            &lt;RowDefinition Height=&quot;80&quot;/&gt;&#10;        &lt;/Grid.RowDefinitions&gt; &lt;Grid.ColumnDefinitions&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;            &lt;ColumnDefinition Width=&quot;80&quot;/&gt;&#10;        &lt;/Grid.ColumnDefinitions&gt; &lt;Button Grid.Row=&quot;4&quot; Content=&quot;1&quot; /&gt; &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;1&quot; Content=&quot;2&quot; /&gt; &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;2&quot; Content=&quot;3&quot; /&gt; &lt;Button Grid.Row=&quot;3&quot; Content=&quot;4&quot; /&gt; &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;1&quot; Content=&quot;5&quot; /&gt; &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;2&quot; Content=&quot;6&quot; /&gt; &lt;Button Grid.Row=&quot;2&quot; Content=&quot;7&quot; /&gt; &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;1&quot; Content=&quot;8&quot; /&gt; &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;2&quot; Content=&quot;9&quot; /&gt; &lt;Button Grid.Row=&quot;5&quot; Grid.Column=&quot;1&quot; Content=&quot;0&quot; /&gt; &lt;Button Grid.Row=&quot;2&quot; Grid.Column=&quot;3&quot; Content=&quot;+&quot; FontSize=&quot;30&quot; /&gt; &lt;Button Grid.Row=&quot;3&quot; Grid.Column=&quot;3&quot; Content=&quot;-&quot; FontSize=&quot;40&quot; /&gt; &lt;Button Grid.Row=&quot;4&quot; Grid.Column=&quot;3&quot; Content=&quot;x&quot; FontSize=&quot;30&quot; /&gt; &lt;Button Grid.Row=&quot;5&quot; Grid.Column=&quot;3&quot; Content=&quot;/&quot; FontSize=&quot;30&quot; /&gt;.../&gt;" />
+            <marker date="1518015346210" expanded="true" signature="473:770" ph="&lt;&lt;RowDefinition Height=&quot;*&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt; &lt;RowDefinition Height=&quot;80&quot;/&gt;.../&gt;" />
+            <marker date="1518015346210" expanded="true" signature="779:1095" ph="&lt;&lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt; &lt;ColumnDefinition Width=&quot;80&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

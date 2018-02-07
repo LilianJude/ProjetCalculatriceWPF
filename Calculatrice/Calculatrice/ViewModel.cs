@@ -35,10 +35,10 @@ namespace Calculatrice
         }
 
         private int cpt = 0;
-        public void AddItem()
+        public void AddItem(string str)
         {
             cpt++;
-            MaListe.Add(Result);
+            MaListe.Add(str + " = " + Result);
         }
     }
 }
