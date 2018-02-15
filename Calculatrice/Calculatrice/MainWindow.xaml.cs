@@ -21,7 +21,7 @@ namespace Calculatrice
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        private static String ERROR = "Erreur";
         public MainWindow()
         {
             InitializeComponent();
@@ -106,10 +106,14 @@ namespace Calculatrice
             if (e.Key == Key.Back)
             {
                 string chaine = ((ViewModel)DataContext).Result;
-                if (chaine != "")
+                if (chaine == ERROR)
+                {
+                    ((ViewModel)DataContext).Result = "";
+                }
+                else if (chaine != "")
                 {
                     ((ViewModel)DataContext).Result = chaine.Remove(chaine.Length - 1);
-                }
+                } 
             }
 
             if (e.Key == Key.Escape)
@@ -134,7 +138,7 @@ namespace Calculatrice
 
             if (e.Key == Key.Enter)
             {
-                //Result();
+                Result();
             }
         }
 
@@ -214,7 +218,11 @@ namespace Calculatrice
         private void Click_back(object sender, RoutedEventArgs e)
         {
             string chaine = ((ViewModel)DataContext).Result;
-            if (chaine != "")
+            if (chaine == ERROR)
+            {
+                ((ViewModel)DataContext).Result = "";
+            }
+            else if (chaine != "")
             {
                 ((ViewModel)DataContext).Result = chaine.Remove(chaine.Length - 1);
             }
@@ -265,7 +273,8 @@ namespace Calculatrice
             }
             return newS;
         }
-        private void Button_Click_Result(object sender, RoutedEventArgs e)
+
+        void Result()
         {
             String input = strFormatter(((ViewModel)DataContext).Result);
             String stockOperation = ((ViewModel)DataContext).Result.Replace(" ", "");
@@ -273,7 +282,7 @@ namespace Calculatrice
             if (stockOperation == "")
             {
                 error = true;
-                ((ViewModel)DataContext).Result = "error";
+                ((ViewModel)DataContext).Result = ERROR;
             }
             TokenStack operatorStack = new TokenStack();
             TokenStack valueStack = new TokenStack();
@@ -331,7 +340,7 @@ namespace Calculatrice
                     else
                     {
                         error = true;
-                        ((ViewModel)DataContext).Result = "error";
+                        ((ViewModel)DataContext).Result = ERROR;
                     }
                 }
 
@@ -354,14 +363,19 @@ namespace Calculatrice
                 }
                 if (!operatorStack.isEmpty() || !valueStack.isEmpty() || result == null)
                 {
-                    ((ViewModel)DataContext).Result = "error";
+                    ((ViewModel)DataContext).Result = ERROR;
                 }
                 else
                 {
                     ((ViewModel)DataContext).Result = Convert.ToString(result.getValue());
                 }
             }
-            ((ViewModel)DataContext).AddItem(stockOperation);
+            if(((ViewModel)DataContext).Result!= ERROR)
+                ((ViewModel)DataContext).AddItem(stockOperation);
+        }
+        private void Button_Click_Result(object sender, RoutedEventArgs e)
+        {
+            Result();
         }
 
         private void processOperator(Token t, TokenStack valueStack, ref bool error)
@@ -369,7 +383,7 @@ namespace Calculatrice
             Token A = null, B = null;
             if (valueStack.isEmpty())
             {
-                ((ViewModel)DataContext).Result = "error";
+                ((ViewModel)DataContext).Result = ERROR;
                 error = true;
             }
             else
@@ -379,7 +393,7 @@ namespace Calculatrice
             }
             if (valueStack.isEmpty())
             {
-                ((ViewModel)DataContext).Result = "error";
+                ((ViewModel)DataContext).Result = ERROR;
                 error = true;
             }
             else
