@@ -28,6 +28,116 @@ namespace Calculatrice
             this.DataContext = new ViewModel();
         }
 
+
+        //********************* EVENTS *********************//
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.NumPad1)
+            {
+                ((ViewModel)DataContext).Result += "1";
+            }
+
+            if (e.Key == Key.NumPad2)
+            {
+                ((ViewModel)DataContext).Result += "2";
+            }
+
+            if (e.Key == Key.NumPad3)
+            {
+                ((ViewModel)DataContext).Result += "3";
+            }
+
+            if (e.Key == Key.NumPad4)
+            {
+                ((ViewModel)DataContext).Result += "4";
+            }
+
+            if (e.Key == Key.NumPad5)
+            {
+                ((ViewModel)DataContext).Result += "5";
+            }
+
+            if (e.Key == Key.NumPad6)
+            {
+                ((ViewModel)DataContext).Result += "6";
+            }
+
+            if (e.Key == Key.NumPad7)
+            {
+                ((ViewModel)DataContext).Result += "7";
+            }
+
+            if (e.Key == Key.NumPad8)
+            {
+                ((ViewModel)DataContext).Result += "8";
+            }
+
+            if (e.Key == Key.NumPad9)
+            {
+                ((ViewModel)DataContext).Result += "9";
+            }
+
+            if (e.Key == Key.NumPad0)
+            {
+                ((ViewModel)DataContext).Result += "0";
+            }
+
+            if (e.Key == Key.Divide)
+            {
+                ((ViewModel)DataContext).Result += "/";
+            }
+
+            if (e.Key == Key.Add)
+            {
+                ((ViewModel)DataContext).Result += "+";
+            }
+
+            if (e.Key == Key.Subtract)
+            {
+                ((ViewModel)DataContext).Result += "-";
+            }
+
+            if (e.Key == Key.Multiply)
+            {
+                ((ViewModel)DataContext).Result += "*";
+            }
+
+            if (e.Key == Key.Back)
+            {
+                string chaine = ((ViewModel)DataContext).Result;
+                if (chaine != "")
+                {
+                    ((ViewModel)DataContext).Result = chaine.Remove(chaine.Length - 1);
+                }
+            }
+
+            if (e.Key == Key.Escape)
+            {
+                ((ViewModel)DataContext).Result = "";
+            }
+
+            if (e.Key == Key.D5)
+            {
+                ((ViewModel)DataContext).Result += "(";
+            }
+
+            if (e.Key == Key.OemOpenBrackets)
+            {
+                ((ViewModel)DataContext).Result += ")";
+            }
+
+            if (e.Key == Key.Decimal)
+            {
+                ((ViewModel)DataContext).Result += ",";
+            }
+
+            if (e.Key == Key.Enter)
+            {
+                Result();
+            }
+        }
+
         private void Click_0(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result += "0";
@@ -117,11 +227,12 @@ namespace Calculatrice
         {
             ((ViewModel)DataContext).Result = "";
         }
+
         private String strFormatter(String s)
         {
             String newS = s.Replace(" ", "");
             char c;
-            for(int i = 0; i < newS.Length; i++)
+            for (int i = 0; i < newS.Length; i++)
             {
                 c = newS[i];
                 if (c == '+' || c == '*' || c == '/')
@@ -129,11 +240,12 @@ namespace Calculatrice
                     newS = newS.Insert(i, " ");
                     newS = newS.Insert(i + 2, " ");
                     i += 2;
-                }else if (c == '-')
+                }
+                else if (c == '-')
                 {
-                    if (i != 0 && i!= (newS.Length-1))
+                    if (i != 0 && i != (newS.Length - 1))
                     {
-                        if ((System.Char.IsDigit(newS[i + 1]) || newS[i + 1]=='(') && (System.Char.IsDigit(newS[i - 1]) || newS[i-1]==')'))
+                        if ((System.Char.IsDigit(newS[i + 1]) || newS[i + 1] == '(') && (System.Char.IsDigit(newS[i - 1]) || newS[i - 1] == ')'))
                         {
                             newS = newS.Insert(i, " ");
                             newS = newS.Insert(i + 2, " ");
@@ -154,20 +266,19 @@ namespace Calculatrice
             }
             return newS;
         }
-        private void Button_Click_Result(object sender, RoutedEventArgs e)
+        void Result()
         {
-
             String input = strFormatter(((ViewModel)DataContext).Result);
             String stockOperation = ((ViewModel)DataContext).Result.Replace(" ", "");
             bool error = false;
-            if (stockOperation=="")
+            if (stockOperation == "")
             {
                 error = true;
                 ((ViewModel)DataContext).Result = "error";
             }
             TokenStack operatorStack = new TokenStack();
             TokenStack valueStack = new TokenStack();
-            
+
 
             // The tokens that make up the input
             String[] parts = input.Split(' ');
@@ -242,7 +353,7 @@ namespace Calculatrice
                     result = valueStack.top();
                     valueStack.pop();
                 }
-                if (!operatorStack.isEmpty() || !valueStack.isEmpty() || result==null)
+                if (!operatorStack.isEmpty() || !valueStack.isEmpty() || result == null)
                 {
                     ((ViewModel)DataContext).Result = "error";
                 }
@@ -252,6 +363,10 @@ namespace Calculatrice
                 }
             }
         ((ViewModel)DataContext).AddItem(stockOperation);
+        }
+        private void Button_Click_Result(object sender, RoutedEventArgs e)
+        {
+            Result();
         }
         private void processOperator(Token t, TokenStack valueStack, ref bool error)
         {
@@ -276,7 +391,7 @@ namespace Calculatrice
                 A = valueStack.top();
                 valueStack.pop();
             }
-            Token R=null;
+            Token R = null;
             if (A != null && B != null)
             {
                 R = t.operate(A.getValue(), B.getValue());
