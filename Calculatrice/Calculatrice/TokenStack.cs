@@ -28,7 +28,10 @@ namespace Calculatrice
             {
                 return tokens[tokens.Count - 1];
             }
-
+            public ObservableCollection<Token> getTokens()
+            {
+                return tokens;
+            }
             /** Mutator methods **/
             public void push(Token t)
             {

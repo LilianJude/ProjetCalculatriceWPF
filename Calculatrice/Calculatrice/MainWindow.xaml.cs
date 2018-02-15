@@ -117,14 +117,46 @@ namespace Calculatrice
         {
             ((ViewModel)DataContext).Result = "";
         }
-
+        private String strFormatter(String s)
+        {
+            String newS = s.Replace(" ", "");
+            char c;
+            for(int i = 0; i < newS.Length; i++)
+            {
+                c = newS[i];
+                if (c == '+' || c == '-' || c == '*' || c == '/')
+                {
+                    newS = newS.Insert(i, " ");
+                    newS = newS.Insert(i + 2, " ");
+                    i += 2;
+                }
+                else if (c == '(')
+                {
+                    newS = newS.Insert(i + 1, " ");
+                    i += 1;
+                }
+                else if (c == ')')
+                {
+                    newS = newS.Insert(i, " ");
+                    i += 1;
+                }
+            }
+            return newS;
+        }
         private void Button_Click_Result(object sender, RoutedEventArgs e)
         {
-            String input = ((ViewModel)DataContext).Result;
-            String stockOperation = input;
+            
+            String input = strFormatter(((ViewModel)DataContext).Result);
+            String stockOperation = ((ViewModel)DataContext).Result.Replace(" ", "");
+            bool error = false;
+            if (stockOperation=="")
+            {
+                error = true;
+                ((ViewModel)DataContext).Result = "error";
+            }
             TokenStack operatorStack = new TokenStack();
             TokenStack valueStack = new TokenStack();
-            bool error = false;
+            
 
             // The tokens that make up the input
             String[] parts = input.Split(' ');
@@ -193,9 +225,13 @@ namespace Calculatrice
             // Print the result if no error has been seen.
             if (error == false)
             {
-                Token result = valueStack.top();
-                valueStack.pop();
-                if (!operatorStack.isEmpty() || !valueStack.isEmpty())
+                Token result = null;
+                if (valueStack.getTokens().Count != 0)
+                {
+                    result = valueStack.top();
+                    valueStack.pop();
+                }
+                if (!operatorStack.isEmpty() || !valueStack.isEmpty() || result==null)
                 {
                     ((ViewModel)DataContext).Result = "error";
                 }
@@ -229,8 +265,16 @@ namespace Calculatrice
                 A = valueStack.top();
                 valueStack.pop();
             }
-            Token R = t.operate(A.getValue(), B.getValue());
-            valueStack.push(R);
+            Token R=null;
+            if (A != null && B != null)
+            {
+                R = t.operate(A.getValue(), B.getValue());
+                valueStack.push(R);
+            }
+            else
+            {
+                error = true;
+            }
         }
         private void Button_Click_Clear_History(object sender, RoutedEventArgs e)
         {
