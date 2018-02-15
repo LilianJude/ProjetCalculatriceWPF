@@ -55,6 +55,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BaseNotifyPropertyChanged.cs" />
+    <Compile Include="Calcul.cs" />
     <Compile Include="Token.cs" />
     <Compile Include="TokenStack.cs" />
     <Compile Include="ViewModel.cs" />

@@ -45,7 +45,19 @@
         <Button Grid.Row="5" Grid.Column="3" Content="=" FontSize="30" Click="Button_Click_Result" />
         <TextBox Grid.ColumnSpan="4" Text="{Binding Result}" FontSize="40"  KeyDown="Window_KeyDown"/>
         <Label Grid.Row="0" Grid.Column="4" Content="Historique" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-        <ListBox Grid.Row="1" Grid.Column="4" Grid.RowSpan="4"  ItemsSource="{Binding MaListe}" SelectedItem="{Binding MonItemSelectionne}" FontSize="20" />
+        <ListBox Grid.Row="1" Grid.Column="4" Grid.RowSpan="4"  ItemsSource="{Binding MaListe}" SelectedItem="{Binding MonItemSelectionne}" FontSize="20" >
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding str1}" />
+                            <TextBlock Text=" = "/>
+                            <TextBlock Text="{Binding str2}" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ListBox>
         <Button Grid.Row="5" Grid.Column="4" Content="Effacer l'historique" FontSize="20" Click="Button_Click_Clear_History" />
     </Grid>
 </Window>

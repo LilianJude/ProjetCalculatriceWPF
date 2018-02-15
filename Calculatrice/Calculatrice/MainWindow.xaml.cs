@@ -370,8 +370,12 @@ namespace Calculatrice
                     ((ViewModel)DataContext).Result = Convert.ToString(result.getValue());
                 }
             }
-            if(((ViewModel)DataContext).Result!= ERROR)
+            if (((ViewModel)DataContext).Result != ERROR)
+            {
                 ((ViewModel)DataContext).AddItem(stockOperation);
+                ((ViewModel)DataContext).Calcul = stockOperation;
+                ((ViewModel)DataContext).ResultatCalcul = ((ViewModel)DataContext).Result;
+            }
         }
         private void Button_Click_Result(object sender, RoutedEventArgs e)
         {
