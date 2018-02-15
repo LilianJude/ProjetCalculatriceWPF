@@ -134,7 +134,7 @@ namespace Calculatrice
 
             if (e.Key == Key.Enter)
             {
-                Result();
+                //Result();
             }
         }
 
@@ -227,7 +227,6 @@ namespace Calculatrice
         {
             ((ViewModel)DataContext).Result = "";
         }
-
         private String strFormatter(String s)
         {
             String newS = s.Replace(" ", "");
@@ -266,7 +265,7 @@ namespace Calculatrice
             }
             return newS;
         }
-        void Result()
+        private void Button_Click_Result(object sender, RoutedEventArgs e)
         {
             String input = strFormatter(((ViewModel)DataContext).Result);
             String stockOperation = ((ViewModel)DataContext).Result.Replace(" ", "");
@@ -362,12 +361,9 @@ namespace Calculatrice
                     ((ViewModel)DataContext).Result = Convert.ToString(result.getValue());
                 }
             }
-        ((ViewModel)DataContext).AddItem(stockOperation);
+            ((ViewModel)DataContext).AddItem(stockOperation);
         }
-        private void Button_Click_Result(object sender, RoutedEventArgs e)
-        {
-            Result();
-        }
+
         private void processOperator(Token t, TokenStack valueStack, ref bool error)
         {
             Token A = null, B = null;
