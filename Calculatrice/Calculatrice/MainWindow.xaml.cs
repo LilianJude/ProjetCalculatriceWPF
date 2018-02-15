@@ -124,11 +124,22 @@ namespace Calculatrice
             for(int i = 0; i < newS.Length; i++)
             {
                 c = newS[i];
-                if (c == '+' || c == '-' || c == '*' || c == '/')
+                if (c == '+' || c == '*' || c == '/')
                 {
                     newS = newS.Insert(i, " ");
                     newS = newS.Insert(i + 2, " ");
                     i += 2;
+                }else if (c == '-')
+                {
+                    if (i != 0 && i!= (newS.Length-1))
+                    {
+                        if ((System.Char.IsDigit(newS[i + 1]) || newS[i + 1]=='(') && (System.Char.IsDigit(newS[i - 1]) || newS[i-1]==')'))
+                        {
+                            newS = newS.Insert(i, " ");
+                            newS = newS.Insert(i + 2, " ");
+                            i += 2;
+                        }
+                    }
                 }
                 else if (c == '(')
                 {
@@ -145,7 +156,7 @@ namespace Calculatrice
         }
         private void Button_Click_Result(object sender, RoutedEventArgs e)
         {
-            
+
             String input = strFormatter(((ViewModel)DataContext).Result);
             String stockOperation = ((ViewModel)DataContext).Result.Replace(" ", "");
             bool error = false;
