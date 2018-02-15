@@ -28,6 +28,116 @@ namespace Calculatrice
             this.DataContext = new ViewModel();
         }
 
+
+        //********************* EVENTS *********************//
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.NumPad1)
+            {
+                ((ViewModel)DataContext).Result += "1";
+            }
+
+            if (e.Key == Key.NumPad2)
+            {
+                ((ViewModel)DataContext).Result += "2";
+            }
+
+            if (e.Key == Key.NumPad3)
+            {
+                ((ViewModel)DataContext).Result += "3";
+            }
+
+            if (e.Key == Key.NumPad4)
+            {
+                ((ViewModel)DataContext).Result += "4";
+            }
+
+            if (e.Key == Key.NumPad5)
+            {
+                ((ViewModel)DataContext).Result += "5";
+            }
+
+            if (e.Key == Key.NumPad6)
+            {
+                ((ViewModel)DataContext).Result += "6";
+            }
+
+            if (e.Key == Key.NumPad7)
+            {
+                ((ViewModel)DataContext).Result += "7";
+            }
+
+            if (e.Key == Key.NumPad8)
+            {
+                ((ViewModel)DataContext).Result += "8";
+            }
+
+            if (e.Key == Key.NumPad9)
+            {
+                ((ViewModel)DataContext).Result += "9";
+            }
+
+            if (e.Key == Key.NumPad0)
+            {
+                ((ViewModel)DataContext).Result += "0";
+            }
+
+            if (e.Key == Key.Divide)
+            {
+                ((ViewModel)DataContext).Result += "/";
+            }
+
+            if (e.Key == Key.Add)
+            {
+                ((ViewModel)DataContext).Result += "+";
+            }
+
+            if (e.Key == Key.Subtract)
+            {
+                ((ViewModel)DataContext).Result += "-";
+            }
+
+            if (e.Key == Key.Multiply)
+            {
+                ((ViewModel)DataContext).Result += "*";
+            }
+
+            if (e.Key == Key.Back)
+            {
+                string chaine = ((ViewModel)DataContext).Result;
+                if (chaine != "")
+                {
+                    ((ViewModel)DataContext).Result = chaine.Remove(chaine.Length - 1);
+                }
+            }
+
+            if (e.Key == Key.Escape)
+            {
+                ((ViewModel)DataContext).Result = "";
+            }
+
+            if (e.Key == Key.D5)
+            {
+                ((ViewModel)DataContext).Result += "(";
+            }
+
+            if (e.Key == Key.OemOpenBrackets)
+            {
+                ((ViewModel)DataContext).Result += ")";
+            }
+
+            if (e.Key == Key.Decimal)
+            {
+                ((ViewModel)DataContext).Result += ",";
+            }
+
+            if (e.Key == Key.Enter)
+            {
+                Result();
+            }
+        }
+
         private void Click_0(object sender, RoutedEventArgs e)
         {
             ((ViewModel)DataContext).Result += "0";
@@ -117,8 +227,9 @@ namespace Calculatrice
         {
             ((ViewModel)DataContext).Result = "";
         }
+        //**************************************************//
 
-        private void Button_Click_Result(object sender, RoutedEventArgs e)
+        void Result()
         {
             String input = ((ViewModel)DataContext).Result;
             String stockOperation = input;
@@ -204,8 +315,14 @@ namespace Calculatrice
                     ((ViewModel)DataContext).Result = Convert.ToString(result.getValue());
                 }
             }
-        ((ViewModel)DataContext).AddItem(stockOperation);
+            ((ViewModel)DataContext).AddItem(stockOperation);
         }
+
+        private void Button_Click_Result(object sender, RoutedEventArgs e)
+        {
+            Result();
+        }
+
         private void processOperator(Token t, TokenStack valueStack, ref bool error)
         {
             Token A = null, B = null;

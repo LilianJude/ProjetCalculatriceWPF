@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculatrice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="725">
+        Title="MainWindow" Height="550" Width="725" KeyDown="Window_KeyDown">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -43,7 +43,7 @@
         <Button Grid.Row="5" Content="CE" FontSize="30" Click="Click_CE"/>
         <Button Grid.Row="5" Grid.Column="2" Content="," FontSize="30" Click="Click_virgule"/>
         <Button Grid.Row="5" Grid.Column="3" Content="=" FontSize="30" Click="Button_Click_Result" />
-        <TextBox Grid.ColumnSpan="4" Text="{Binding Result}" FontSize="40" />
+        <TextBox Grid.ColumnSpan="4" Text="{Binding Result}" FontSize="40"  KeyDown="Window_KeyDown"/>
         <Label Grid.Row="0" Grid.Column="4" Content="Historique" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
         <ListBox Grid.Row="1" Grid.Column="4" Grid.RowSpan="4"  ItemsSource="{Binding MaListe}" SelectedItem="{Binding MonItemSelectionne}" FontSize="20" />
         <Button Grid.Row="5" Grid.Column="4" Content="Effacer l'historique" FontSize="20" Click="Button_Click_Clear_History" />
