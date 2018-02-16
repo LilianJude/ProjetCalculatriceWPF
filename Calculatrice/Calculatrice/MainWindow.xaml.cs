@@ -235,6 +235,7 @@ namespace Calculatrice
         {
             ((ViewModel)DataContext).Result = "";
         }
+
         private String strFormatter(String s)
         {
             String newS = s.Replace(" ", "");
