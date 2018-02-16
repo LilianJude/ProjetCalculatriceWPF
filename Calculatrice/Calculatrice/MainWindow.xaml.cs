@@ -235,11 +235,7 @@ namespace Calculatrice
         {
             ((ViewModel)DataContext).Result = "";
         }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> ce335a6c86f2de2e06b16bb59100e2d317bebe97
         private String strFormatter(String s)
         {
             String newS = s.Replace(" ", "");
@@ -279,11 +275,7 @@ namespace Calculatrice
             return newS;
         }
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> ce335a6c86f2de2e06b16bb59100e2d317bebe97
         void Result()
         {
             String input = strFormatter(((ViewModel)DataContext).Result);
