@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +9,12 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Calculatrice
+namespace Calculatrice_JUDE_GUILLON
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
@@ -28,83 +28,111 @@ namespace Calculatrice
             this.DataContext = new ViewModel();
         }
 
-
         //********************* EVENTS *********************//
+        public void btnAnimation(Button b)
+        {
+            var animation = new BrushAnimation
+            {
+                From = Brushes.IndianRed,
+                To = Brushes.Transparent,
+                Duration = new Duration(TimeSpan.FromSeconds(0.1)),
+            };
+            Storyboard.SetTarget(animation, b);
+            Storyboard.SetTargetProperty(animation, new PropertyPath("Background"));
 
+            var sb = new Storyboard();
+            sb.Children.Add(animation);
+            sb.Begin();
+        }
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.NumPad1)
             {
+                btnAnimation(Btn1);
                 ((ViewModel)DataContext).Result += "1";
             }
 
             if (e.Key == Key.NumPad2)
             {
+                btnAnimation(Btn2);
                 ((ViewModel)DataContext).Result += "2";
             }
 
             if (e.Key == Key.NumPad3)
             {
+                btnAnimation(Btn3);
                 ((ViewModel)DataContext).Result += "3";
             }
 
             if (e.Key == Key.NumPad4)
             {
+                btnAnimation(Btn4);
                 ((ViewModel)DataContext).Result += "4";
             }
 
             if (e.Key == Key.NumPad5)
             {
+                btnAnimation(Btn5);
                 ((ViewModel)DataContext).Result += "5";
             }
 
             if (e.Key == Key.NumPad6)
             {
+                btnAnimation(Btn6);
                 ((ViewModel)DataContext).Result += "6";
             }
 
             if (e.Key == Key.NumPad7)
             {
+                btnAnimation(Btn7);
                 ((ViewModel)DataContext).Result += "7";
             }
 
             if (e.Key == Key.NumPad8)
             {
+                btnAnimation(Btn8);
                 ((ViewModel)DataContext).Result += "8";
             }
 
             if (e.Key == Key.NumPad9)
             {
+                btnAnimation(Btn9);
                 ((ViewModel)DataContext).Result += "9";
             }
 
             if (e.Key == Key.NumPad0)
             {
+                btnAnimation(Btn0);
                 ((ViewModel)DataContext).Result += "0";
             }
 
             if (e.Key == Key.Divide)
             {
+                btnAnimation(BtnDivise);
                 ((ViewModel)DataContext).Result += "/";
             }
 
             if (e.Key == Key.Add)
             {
+                btnAnimation(BtnPlus);
                 ((ViewModel)DataContext).Result += "+";
             }
 
             if (e.Key == Key.Subtract)
             {
+                btnAnimation(BtnMoins);
                 ((ViewModel)DataContext).Result += "-";
             }
 
             if (e.Key == Key.Multiply)
             {
+                btnAnimation(BtnFois);
                 ((ViewModel)DataContext).Result += "*";
             }
 
             if (e.Key == Key.Back)
             {
+                btnAnimation(BtnBack);
                 string chaine = ((ViewModel)DataContext).Result;
                 if (chaine == ERROR)
                 {
@@ -113,7 +141,7 @@ namespace Calculatrice
                 else if (chaine != "")
                 {
                     ((ViewModel)DataContext).Result = chaine.Remove(chaine.Length - 1);
-                } 
+                }
             }
 
             if (e.Key == Key.Escape)
@@ -123,21 +151,25 @@ namespace Calculatrice
 
             if (e.Key == Key.D5)
             {
+                btnAnimation(BtnPG);
                 ((ViewModel)DataContext).Result += "(";
             }
 
             if (e.Key == Key.OemOpenBrackets)
             {
+                btnAnimation(BtnPD);
                 ((ViewModel)DataContext).Result += ")";
             }
 
             if (e.Key == Key.Decimal)
             {
+                btnAnimation(BtnVirgule);
                 ((ViewModel)DataContext).Result += ",";
             }
 
             if (e.Key == Key.Enter)
             {
+                btnAnimation(BtnEgal);
                 Result();
             }
         }
@@ -275,10 +307,7 @@ namespace Calculatrice
             return newS;
         }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 9f282f477470619af453bdf23ee5aad1ec46d7aa
         void Result()
         {
             String input = strFormatter(((ViewModel)DataContext).Result);
@@ -375,6 +404,10 @@ namespace Calculatrice
                     ((ViewModel)DataContext).Result = Convert.ToString(result.getValue());
                 }
             }
+            else
+            {
+                ((ViewModel)DataContext).Result = ERROR;
+            }
             if (((ViewModel)DataContext).Result != ERROR)
             {
                 ((ViewModel)DataContext).AddItem(stockOperation);
@@ -414,7 +447,10 @@ namespace Calculatrice
             if (A != null && B != null)
             {
                 R = t.operate(A.getValue(), B.getValue());
-                valueStack.push(R);
+                if (R.getType() == -1)
+                    error = true;
+                else
+                    valueStack.push(R);
             }
             else
             {
@@ -426,4 +462,6 @@ namespace Calculatrice
             ((ViewModel)DataContext).MaListe.Clear();
         }
     }
+
 }
+

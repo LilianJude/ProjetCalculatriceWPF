@@ -38,7 +38,10 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9f282f477470619af453bdf23ee5aad1ec46d7aa
         <Button Style="{StaticResource ButtonStyle}" Grid.Row="4" Content="1" FontSize="30" Click="Click_1"/>
         <Button Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="1" Content="2" FontSize="30" Click="Click_2"/>
         <Button Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="2" Content="3" FontSize="30" Click="Click_3"/>
@@ -62,7 +65,11 @@
         <Label Grid.ColumnSpan="4" Content="{Binding Result}" Foreground="White" FontSize="40"  KeyDown="Window_KeyDown"/>
         <Label Grid.Row="0" Grid.Column="4" Content="Historique" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="White"/>
         <Button Style="{StaticResource ButtonStyle}" Grid.Row="5" Grid.Column="4" Content="Effacer l'historique" FontSize="20" Click="Button_Click_Clear_History" />
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 9f282f477470619af453bdf23ee5aad1ec46d7aa
         <ListBox Background="Transparent" Foreground="White" Grid.Row="1" Grid.Column="4" Grid.RowSpan="4"  ItemsSource="{Binding MaListe}" SelectedItem="{Binding MonItemSelectionne}" FontSize="20" >
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
@@ -76,7 +83,12 @@
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ListBox>
+<<<<<<< HEAD
         <Button Style="{StaticResource ButtonStyle}" Grid.Row="5" Grid.Column="4" Content="Effacer l'historique" FontSize="20" Click="Button_Click_Clear_History" />
 
+=======
+
+        <Button Style="{StaticResource ButtonStyle}" Grid.Row="5" Grid.Column="4" Content="Effacer l'historique" FontSize="20" Click="Button_Click_Clear_History" />
+>>>>>>> 9f282f477470619af453bdf23ee5aad1ec46d7aa
     </Grid>
 </Window>

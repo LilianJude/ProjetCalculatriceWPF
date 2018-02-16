@@ -1,0 +1,30 @@
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.csprojResolveAssemblyReference.cache
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\MainWindow.g.cs
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\App.g.cs
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON_MarkupCompile.cache
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON_MarkupCompile.lref
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\bin\Debug\Calculatrice_JUDE_GUILLON.exe.config
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\bin\Debug\Calculatrice_JUDE_GUILLON.exe
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\bin\Debug\Calculatrice_JUDE_GUILLON.pdb
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\MainWindow.baml
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.g.resources
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.Properties.Resources.resources
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.csproj.GenerateResource.Cache
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.csproj.CoreCompileInputs.cache
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.exe
+D:\IUT\S4\NET\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.pdb
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\bin\Debug\Calculatrice_JUDE_GUILLON.exe.config
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\bin\Debug\Calculatrice_JUDE_GUILLON.exe
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\bin\Debug\Calculatrice_JUDE_GUILLON.pdb
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.csprojResolveAssemblyReference.cache
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\MainWindow.g.cs
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\App.g.cs
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON_MarkupCompile.cache
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON_MarkupCompile.lref
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\MainWindow.baml
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.g.resources
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.Properties.Resources.resources
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.csproj.GenerateResource.Cache
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.csproj.CoreCompileInputs.cache
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.exe
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice_JUDE_GUILLON\Calculatrice_JUDE_GUILLON\obj\Debug\Calculatrice_JUDE_GUILLON.pdb
