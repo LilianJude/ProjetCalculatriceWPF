@@ -50,7 +50,7 @@ namespace Calculatrice_JUDE_GUILLON
         public void AddItem(string str)
         {
             cpt++;
-            MaListe.Add(new Calcul(str,Result));
+            MaListe.Add(new Calcul(str, Result));
             ResultatCalcul = Result;
             Calcul = str;
         }

@@ -29,22 +29,22 @@ namespace Calculatrice_JUDE_GUILLON
             {
                 case "+":
                     type = OPERATOR;
-               operatorr = contents[0];
+                    operatorr = contents[0];
                     precedence = 1;
                     break;
                 case "-":
                     type = OPERATOR;
-               operatorr = contents[0];
+                    operatorr = contents[0];
                     precedence = 1;
                     break;
                 case "*":
                     type = OPERATOR;
-               operatorr = contents[0];
+                    operatorr = contents[0];
                     precedence = 2;
                     break;
                 case "/":
                     type = OPERATOR;
-               operatorr = contents[0];
+                    operatorr = contents[0];
                     precedence = 2;
                     break;
                 case "(":
@@ -80,21 +80,22 @@ namespace Calculatrice_JUDE_GUILLON
         public Token operate(double a, double b)
         {
             double result = 0;
-            switch (operatorr) {
-           case '+':
-               result = a + b;
-                break;
-           case '-':
-               result = a - b;
-                break;
-           case '*':
-               result = a * b;
-                break;
-           case '/':
+            switch (operatorr)
+            {
+                case '+':
+                    result = a + b;
+                    break;
+                case '-':
+                    result = a - b;
+                    break;
+                case '*':
+                    result = a * b;
+                    break;
+                case '/':
                     if (b == 0)
                         return new Token("Erreur");
-               result = a / b;
-                break;
+                    result = a / b;
+                    break;
             }
             return new Token(result);
         }

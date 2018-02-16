@@ -34,10 +34,10 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-  
+
     </Window.Resources>
-    
-    
+
+
     <Window.Background>
         <ImageBrush ImageSource="degrade.jpg"/>
     </Window.Background>
@@ -111,7 +111,7 @@
             </ItemsControl.ItemTemplate>
         </ListBox>
 
-        
+
     </Grid>
 </Window>
 
