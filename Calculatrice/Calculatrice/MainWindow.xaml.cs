@@ -21,7 +21,7 @@ namespace Calculatrice
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        private static String ERROR = "Erreur";
         public MainWindow()
         {
             InitializeComponent();
@@ -106,10 +106,14 @@ namespace Calculatrice
             if (e.Key == Key.Back)
             {
                 string chaine = ((ViewModel)DataContext).Result;
-                if (chaine != "")
+                if (chaine == ERROR)
+                {
+                    ((ViewModel)DataContext).Result = "";
+                }
+                else if (chaine != "")
                 {
                     ((ViewModel)DataContext).Result = chaine.Remove(chaine.Length - 1);
-                }
+                } 
             }
 
             if (e.Key == Key.Escape)
@@ -214,7 +218,11 @@ namespace Calculatrice
         private void Click_back(object sender, RoutedEventArgs e)
         {
             string chaine = ((ViewModel)DataContext).Result;
-            if (chaine != "")
+            if (chaine == ERROR)
+            {
+                ((ViewModel)DataContext).Result = "";
+            }
+            else if (chaine != "")
             {
                 ((ViewModel)DataContext).Result = chaine.Remove(chaine.Length - 1);
             }
@@ -227,8 +235,11 @@ namespace Calculatrice
         {
             ((ViewModel)DataContext).Result = "";
         }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ce335a6c86f2de2e06b16bb59100e2d317bebe97
         private String strFormatter(String s)
         {
             String newS = s.Replace(" ", "");
@@ -236,11 +247,23 @@ namespace Calculatrice
             for (int i = 0; i < newS.Length; i++)
             {
                 c = newS[i];
-                if (c == '+' || c == '-' || c == '*' || c == '/')
+                if (c == '+' || c == '*' || c == '/')
                 {
                     newS = newS.Insert(i, " ");
                     newS = newS.Insert(i + 2, " ");
                     i += 2;
+                }
+                else if (c == '-')
+                {
+                    if (i != 0 && i != (newS.Length - 1))
+                    {
+                        if ((System.Char.IsDigit(newS[i + 1]) || newS[i + 1] == '(') && (System.Char.IsDigit(newS[i - 1]) || newS[i - 1] == ')'))
+                        {
+                            newS = newS.Insert(i, " ");
+                            newS = newS.Insert(i + 2, " ");
+                            i += 2;
+                        }
+                    }
                 }
                 else if (c == '(')
                 {
@@ -256,8 +279,11 @@ namespace Calculatrice
             return newS;
         }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ce335a6c86f2de2e06b16bb59100e2d317bebe97
         void Result()
         {
             String input = strFormatter(((ViewModel)DataContext).Result);
@@ -266,7 +292,7 @@ namespace Calculatrice
             if (stockOperation == "")
             {
                 error = true;
-                ((ViewModel)DataContext).Result = "error";
+                ((ViewModel)DataContext).Result = ERROR;
             }
             TokenStack operatorStack = new TokenStack();
             TokenStack valueStack = new TokenStack();
@@ -324,7 +350,7 @@ namespace Calculatrice
                     else
                     {
                         error = true;
-                        ((ViewModel)DataContext).Result = "error";
+                        ((ViewModel)DataContext).Result = ERROR;
                     }
                 }
 
@@ -347,16 +373,20 @@ namespace Calculatrice
                 }
                 if (!operatorStack.isEmpty() || !valueStack.isEmpty() || result == null)
                 {
-                    ((ViewModel)DataContext).Result = "error";
+                    ((ViewModel)DataContext).Result = ERROR;
                 }
                 else
                 {
                     ((ViewModel)DataContext).Result = Convert.ToString(result.getValue());
                 }
             }
-            ((ViewModel)DataContext).AddItem(stockOperation);
+            if (((ViewModel)DataContext).Result != ERROR)
+            {
+                ((ViewModel)DataContext).AddItem(stockOperation);
+                ((ViewModel)DataContext).Calcul = stockOperation;
+                ((ViewModel)DataContext).ResultatCalcul = ((ViewModel)DataContext).Result;
+            }
         }
-
         private void Button_Click_Result(object sender, RoutedEventArgs e)
         {
             Result();
@@ -367,7 +397,7 @@ namespace Calculatrice
             Token A = null, B = null;
             if (valueStack.isEmpty())
             {
-                ((ViewModel)DataContext).Result = "error";
+                ((ViewModel)DataContext).Result = ERROR;
                 error = true;
             }
             else
@@ -377,7 +407,7 @@ namespace Calculatrice
             }
             if (valueStack.isEmpty())
             {
-                ((ViewModel)DataContext).Result = "error";
+                ((ViewModel)DataContext).Result = ERROR;
                 error = true;
             }
             else
@@ -385,7 +415,7 @@ namespace Calculatrice
                 A = valueStack.top();
                 valueStack.pop();
             }
-            Token R=null;
+            Token R = null;
             if (A != null && B != null)
             {
                 R = t.operate(A.getValue(), B.getValue());

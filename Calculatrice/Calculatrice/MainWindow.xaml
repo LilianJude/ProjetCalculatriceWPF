@@ -38,6 +38,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+<<<<<<< HEAD
         <Button Style="{StaticResource ButtonStyle}" Grid.Row="4" Content="1" FontSize="30" Click="Click_1"/>
         <Button Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="1" Content="2" FontSize="30" Click="Click_2"/>
         <Button Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="2" Content="3" FontSize="30" Click="Click_3"/>
@@ -62,5 +63,43 @@
         <Label Grid.Row="0" Grid.Column="4" Content="Historique" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="White"/>
         <ListBox Background="Transparent" Foreground="White"  Grid.Row="1" Grid.Column="4" Grid.RowSpan="4"  ItemsSource="{Binding MaListe}" SelectedItem="{Binding MonItemSelectionne}" FontSize="20" />
         <Button Style="{StaticResource ButtonStyle}" Grid.Row="5" Grid.Column="4" Content="Effacer l'historique" FontSize="20" Click="Button_Click_Clear_History" />
+=======
+        <Button Grid.Row="4" Content="1" FontSize="30" Click="Click_1"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="2" FontSize="30" Click="Click_2"/>
+        <Button Grid.Row="4" Grid.Column="2" Content="3" FontSize="30" Click="Click_3"/>
+        <Button Grid.Row="3" Content="4" FontSize="30" Click="Click_4"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="5" FontSize="30" Click="Click_5"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="6" FontSize="30" Click="Click_6"/>
+        <Button Grid.Row="2" Content="7" FontSize="30" Click="Click_7"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="8" FontSize="30" Click="Click_8"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="9" FontSize="30" Click="Click_9"/>
+        <Button Grid.Row="5" Grid.Column="1" Content="0" FontSize="30" Click="Click_0"/>
+        <Button Grid.Row="2" Grid.Column="3" Content="+" FontSize="30" Click="Click_plus"/>
+        <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="40" Click="Click_moins"/>
+        <Button Grid.Row="4" Grid.Column="3" Content="*" FontSize="30" Click="Click_multiple"/>
+        <Button Grid.Row="1" Grid.Column="3" Content="/" FontSize="30" Click="Click_divise"/>
+        <Button Grid.Row="1" Content="(" FontSize="30" Click="Click_parentheseG"/>
+        <Button Grid.Row="1" Grid.Column="1" Content=")" FontSize="30" Click="Click_parentheseD"/>
+        <Button Grid.Row="1" Grid.Column="2" Content="back" FontSize="30" Click="Click_back"/>
+        <Button Grid.Row="5" Content="CE" FontSize="30" Click="Click_CE"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="," FontSize="30" Click="Click_virgule"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="=" FontSize="30" Click="Button_Click_Result" />
+        <TextBox Grid.ColumnSpan="4" Text="{Binding Result}" FontSize="40"  KeyDown="Window_KeyDown"/>
+        <Label Grid.Row="0" Grid.Column="4" Content="Historique" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <ListBox Grid.Row="1" Grid.Column="4" Grid.RowSpan="4"  ItemsSource="{Binding MaListe}" SelectedItem="{Binding MonItemSelectionne}" FontSize="20" >
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding str1}" />
+                            <TextBlock Text=" = "/>
+                            <TextBlock Text="{Binding str2}" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ListBox>
+        <Button Grid.Row="5" Grid.Column="4" Content="Effacer l'historique" FontSize="20" Click="Button_Click_Clear_History" />
+>>>>>>> ce335a6c86f2de2e06b16bb59100e2d317bebe97
     </Grid>
 </Window>

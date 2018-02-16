@@ -4,17 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 D:\IUT\S4\NET\Projet_Calculatrice\ProjetCalculatriceWPF\Calculatrice\Calculatrice\obj\Debug\
+=======
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice\Calculatrice\obj\Debug\
+>>>>>>> ce335a6c86f2de2e06b16bb59100e2d317bebe97
 Calculatrice
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 D:\IUT\S4\NET\Projet_Calculatrice\ProjetCalculatriceWPF\Calculatrice\Calculatrice\App.xaml
 11151548125
 
 13-42273016
+=======
+D:\IUT\2EME ANNEE\.net\ProjetCalculatriceWPF\Calculatrice\Calculatrice\App.xaml
+11151548125
+
+141268999552
+>>>>>>> ce335a6c86f2de2e06b16bb59100e2d317bebe97
 131569487696
 MainWindow.xaml;
 
-False
+True
 

@@ -16,9 +16,9 @@ namespace Calculatrice
             set { SetProperty(value); }
         }
 
-        public ObservableCollection<string> MaListe
+        public ObservableCollection<Calcul> MaListe
         {
-            get { return GetProperty<ObservableCollection<string>>(); }
+            get { return GetProperty<ObservableCollection<Calcul>>(); }
             set { SetProperty(value); }
         }
 
@@ -28,17 +28,30 @@ namespace Calculatrice
             set { SetProperty(value); }
         }
 
+        public string Calcul
+        {
+            get { return GetProperty<string>(); }
+            set { SetProperty(value); }
+        }
+
+        public string ResultatCalcul
+        {
+            get { return GetProperty<string>(); }
+            set { SetProperty(value); }
+        }
         public ViewModel()
         {
             Result = "";
-            MaListe = new ObservableCollection<string>();
+            MaListe = new ObservableCollection<Calcul>();
         }
 
         private int cpt = 0;
         public void AddItem(string str)
         {
             cpt++;
-            MaListe.Add(str + " = " + Result);
+            MaListe.Add(new Calcul(str,Result));
+            ResultatCalcul = Result;
+            Calcul = str;
         }
     }
 }
