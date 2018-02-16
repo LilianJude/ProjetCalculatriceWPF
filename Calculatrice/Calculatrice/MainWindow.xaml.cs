@@ -227,16 +227,13 @@ namespace Calculatrice
         {
             ((ViewModel)DataContext).Result = "";
         }
-<<<<<<< HEAD
-        //**************************************************//
 
-        void Result()
-=======
+
         private String strFormatter(String s)
         {
             String newS = s.Replace(" ", "");
             char c;
-            for(int i = 0; i < newS.Length; i++)
+            for (int i = 0; i < newS.Length; i++)
             {
                 c = newS[i];
                 if (c == '+' || c == '-' || c == '*' || c == '/')
@@ -258,21 +255,22 @@ namespace Calculatrice
             }
             return newS;
         }
-        private void Button_Click_Result(object sender, RoutedEventArgs e)
->>>>>>> eef6f273366c7eda6085143338c576ed878b372d
+
+
+
+        void Result()
         {
-            
             String input = strFormatter(((ViewModel)DataContext).Result);
             String stockOperation = ((ViewModel)DataContext).Result.Replace(" ", "");
             bool error = false;
-            if (stockOperation=="")
+            if (stockOperation == "")
             {
                 error = true;
                 ((ViewModel)DataContext).Result = "error";
             }
             TokenStack operatorStack = new TokenStack();
             TokenStack valueStack = new TokenStack();
-            
+
 
             // The tokens that make up the input
             String[] parts = input.Split(' ');
@@ -347,7 +345,7 @@ namespace Calculatrice
                     result = valueStack.top();
                     valueStack.pop();
                 }
-                if (!operatorStack.isEmpty() || !valueStack.isEmpty() || result==null)
+                if (!operatorStack.isEmpty() || !valueStack.isEmpty() || result == null)
                 {
                     ((ViewModel)DataContext).Result = "error";
                 }
