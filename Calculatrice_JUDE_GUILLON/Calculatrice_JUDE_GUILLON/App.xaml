@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Calculatrice_JUDE_GUILLON"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>
